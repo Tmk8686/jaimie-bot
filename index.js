@@ -52,3 +52,4 @@ bot.on("ready", async (message) => {
   });
 });
 bot.login("TOKEN");
+console.log("test");
