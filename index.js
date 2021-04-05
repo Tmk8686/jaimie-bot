@@ -2,7 +2,6 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client();
-const keepAlive = require('./server.js')
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
@@ -52,6 +51,4 @@ bot.on("ready", async (message) => {
     } catch (e) {}
   });
 });
-
-keepAlive()
-bot.login("ODE0MzQ3Nzk1MDA3NjY4MjU1.YDcifA.-ry4jT10kEYLszypEi-5pmYdmu8");
+bot.login("TOKEN");
